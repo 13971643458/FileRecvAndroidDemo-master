@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteColor">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+        <ImageView
+                android:id="@+id/image_service"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_me_settings"/>
+
+        <TextView
+                android:id="@+id/tv_serviceTitle_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#585858"
+                android:text="7-11 Softwre Base Store"
+                android:layout_above="@+id/tv_serviceTitle_2"
+                android:layout_toRightOf="@+id/image_service"
+                android:layout_toEndOf="@+id/image_service"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"/>
+
+        <TextView
+                android:id="@+id/tv_serviceTitle_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/settingTextColorTitle"
+                android:text="10% Off for All goods"
+                android:layout_above="@+id/tv_serviceTitle_3"
+                android:layout_alignLeft="@+id/tv_serviceTitle_1"
+                android:layout_alignStart="@+id/tv_serviceTitle_1"/>
+
+        <TextView
+                android:id="@+id/tv_serviceTitle_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#FFA158"
+                android:text="Expires Soon"
+                android:layout_alignBottom="@+id/image_service"
+                android:layout_alignLeft="@+id/tv_serviceTitle_2"
+                android:layout_alignStart="@+id/tv_serviceTitle_2"/>
+
+        <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#585858"
+                android:text="1km"
+                android:layout_alignBaseline="@+id/tv_serviceTitle_1"
+                android:layout_alignBottom="@+id/tv_serviceTitle_1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>

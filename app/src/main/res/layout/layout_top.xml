@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@color/backgroundColor"
+                tools:context="pundix.merchant.com.filerecvandroiddemo.MainActivity">
+
+    <TextView
+            android:id="@+id/tv_pandi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pundi_Pundi"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/whiteColor"
+            android:textSize="16sp"/>
+
+    <LinearLayout android:layout_width="200dp"
+                  android:layout_height="match_parent"
+                  android:layout_alignParentRight="true">
+
+        <RelativeLayout android:id="@+id/linear_service"
+                      android:layout_width="100dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Service"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/whiteColor"
+                      android:textSize="16sp"/>
+
+            <View android:id="@+id/view_service"
+                  android:layout_width="wrap_content"
+                  android:layout_height="5dp"
+                  android:layout_alignParentBottom="true"
+                  android:background="@color/viewColor"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/linear_me"
+                      android:layout_width="100dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="1">
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Me"
+                      android:textColor="@color/whiteColor"
+                      android:layout_centerInParent="true"
+                      android:textSize="16sp"/>
+
+            <View android:id="@+id/view_me"
+                  android:layout_width="wrap_content"
+                  android:layout_height="5dp"
+                  android:layout_alignParentBottom="true"
+                  android:background="@color/viewColor"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

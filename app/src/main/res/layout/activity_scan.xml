@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:orientation="horizontal"
+                  android:background="@android:color/white">
+
+        <ImageView android:id="@+id/imae_codeBack"
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:layout_gravity="center"
+                   android:layout_marginLeft="20dp"
+                   android:onClick="onClick"
+                   android:src="@drawable/ic_code_back"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:text="Pay"
+                android:textColor="@color/settingTextColorTitle"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:textSize="18sp"/>
+
+        <TextView
+                android:id="@+id/choose_qrcode_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:onClick="onClick"
+                android:text="Photo Album"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/backgroundColor"
+                android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <com.paic.hyperion.core.hfqrcode.HFQRCodeView
+            android:id="@+id/zxingview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"/>
+
+</LinearLayout>

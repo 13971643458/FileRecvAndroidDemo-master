@@ -1,0 +1,56 @@
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false">
+
+    <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nsv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!--&lt;!&ndash;解决NestedScrollView + RecyclerView页面载入时总是滑动到最底部的问题&ndash;&gt;-->
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:descendantFocusability="blocksDescendants"
+                      android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                    android:id="@+id/abl_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true">
+
+                <include android:id="@+id/view_serviceTitle" layout="@layout/service_title" android:visibility="gone"/>
+
+                <include android:id="@+id/service_in" layout="@layout/layout_service_in"/>
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fitsSystemWindows="true"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                        app:contentScrim="@color/whiteColor">
+
+                    <android.support.v7.widget.Toolbar
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_collapseMode="pin"
+                            app:contentInsetLeft="0dp"
+                            app:contentInsetStart="0dp">
+
+                        <include android:id="@+id/service_bottom" layout="@layout/layout_service_bottom"/>
+
+                    </android.support.v7.widget.Toolbar>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/backgroundColor">
+
+    <ImageView
+            android:id="@+id/image_ServiceScan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_home_pay"/>
+
+    <ImageView
+            android:id="@+id/image_ServiceCode"
+            android:layout_toRightOf="@+id/image_ServiceScan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/btn_home_collection"/>
+
+    <ImageView
+            android:layout_toRightOf="@+id/image_ServiceCode"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_home_credit"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="20dp"
+              android:textSize="18sp"
+              android:text="Pan-Pan"/>
+
+</RelativeLayout>

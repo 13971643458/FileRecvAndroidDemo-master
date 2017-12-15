@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="150dp"
+              android:gravity="center"
+              android:background="@color/backgroundColor">
+
+    <TextView
+            android:id="@+id/tv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="Pandi"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/whiteColor"
+            android:drawableTop="@drawable/btn_home_pay"/>
+
+    <TextView
+            android:id="@+id/tv_RQCode"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="Pembayaran"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/whiteColor"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/btn_home_collection"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="Credit"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/whiteColor"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/btn_home_credit"/>
+
+</LinearLayout>

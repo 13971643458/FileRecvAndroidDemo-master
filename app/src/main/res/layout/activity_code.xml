@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backgroundColor">
+
+    <include android:id="@+id/includ_title"
+             layout="@layout/public_title"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/includ_title"
+                  android:background="@drawable/text_view_border"
+                  android:layout_marginLeft="30dp"
+                  android:layout_marginRight="30dp"
+                  android:layout_marginTop="70dp"
+                  android:orientation="vertical">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="carlrocks"
+                  android:textColor="@color/settingTextColorTitle"
+                  android:textSize="16sp"
+                  android:layout_marginTop="60dp"
+                  android:layout_gravity="center_horizontal"/>
+
+        <ImageView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_me_merchant"
+                android:layout_gravity="center_horizontal"/>
+
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="#F5F5F5"
+              android:layout_marginTop="10dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Payment QR Code"
+                  android:textColor="@color/settingTextColorTitle"
+                  android:layout_marginTop="20dp"
+                  android:textSize="18sp"
+                  android:layout_gravity="center_horizontal"/>
+
+        <ImageView android:id="@+id/image_qrCode"
+                   android:layout_width="200dp"
+                   android:layout_height="200dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <pundix.merchant.com.filerecvandroiddemo.common.MLImageView
+            android:id="@+id/image_headPortrait"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/includ_title"
+            android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
